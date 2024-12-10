@@ -77,6 +77,8 @@
   координату для размещения заголовка "оно тебе надо" 
   поверх оверлея*/
   z-index: 2;
+  padding-left: 50px;
+  padding-right: 45px;
 }
 
 h1 {
@@ -89,37 +91,32 @@ h1 {
   font-size: 100px;
   display: block;
   text-transform: uppercase;
+  word-spacing: -22px;
+  
 }
 
 .aligned-text {
   padding-top: 159px;
-  padding-left: 50px;
+  text-align: start;
 }
 
 .aligned-text_center {
   text-align: center;
   padding-top: 10px;
-}
-
-.letter-spacing_center {
-  letter-spacing: 4px;
+ 
 }
 
 .aligned-text_right {
-  padding-left: 635px;
+  text-align: right;
   padding-top: 2px;
 }
 
 .letter-spacing {
-  letter-spacing: 4px;
+  letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 58px;
-}
-
-.letter-spacing_right {
-  letter-spacing: 18px;
+  letter-spacing: 60px;
 }
 
 .cover__description-text,
@@ -185,6 +182,7 @@ button {
   justify-content: space-evenly;
   color: white;
   margin-top: 26px;
+  row-gap: 25px;
 }
 
 h3 {
@@ -209,26 +207,8 @@ ul {
   text-decoration: none;
 }
 
-.card_type_film {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  justify-content: space-between;
-  padding: 50px 40px;
-  position: relative;
-  z-index: 2;
-}
-
-.card_type_book {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  justify-content: space-between;
-  padding: 50px 40px;
-  position: relative;
-  z-index: 2;
-}
-
+.card_type_film,
+.card_type_book,
 .card_type_picture {
   display: flex;
   flex-direction: column;
@@ -245,7 +225,6 @@ ul {
   display: flex;
   height: 100%;
   width: 100%;
-  background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -324,6 +303,7 @@ ul {
   width: 1000px;
   grid-template-columns: 3fr 148px 3fr;
   font-size: 18px;
+  margin-bottom: 88px; /*Величина отступа указана согласно макету*/
 }
 
 .footer__address {
