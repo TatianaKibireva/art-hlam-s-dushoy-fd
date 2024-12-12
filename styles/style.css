@@ -72,43 +72,29 @@
 }
 
 .cover__title {
-  width: 1100px;
   position: relative; /* Используется, чтобы задать 
   координату для размещения заголовка "оно тебе надо" 
   поверх оверлея*/
-  z-index: 2;
-  padding-left: 50px;
-  padding-right: 45px;
-}
-
-h1 {
   color: white;
-}
-
-.aligned-text,
-.aligned-text_center,
-.aligned-text_right {
-  font-size: 100px;
-  display: block;
-  text-transform: uppercase;
-  word-spacing: -22px;
-  
+  padding: 159px 50px 0px 50px;
 }
 
 .aligned-text {
-  padding-top: 159px;
-  text-align: start;
+  font-size: 100px;
+  display: block;
+  text-transform: uppercase;
 }
 
 .aligned-text_center {
   text-align: center;
-  padding-top: 10px;
- 
+  line-height: 1;
+  padding-top: 20px;
 }
 
 .aligned-text_right {
   text-align: right;
-  padding-top: 2px;
+  line-height: 1;
+  padding-top: 20px;
 }
 
 .letter-spacing {
@@ -117,6 +103,10 @@ h1 {
 
 .letter-spacing-extended {
   letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+letter-spacing: 0px;
 }
 
 .cover__description-text,
@@ -160,7 +150,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 127px;
+  margin-top: 135px;
   padding-left: 43px;
   position: relative; /* Используется, чтобы задать 
   координату для размещения заголовка h2
@@ -207,9 +197,7 @@ ul {
   text-decoration: none;
 }
 
-.card_type_film,
-.card_type_book,
-.card_type_picture {
+.card {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -218,13 +206,12 @@ ul {
   position: relative;
   z-index: 2;
 }
-
-.lots__card-list-item_film,
-.lots__card-list-item_book,
-.lots__card-list-item_picture {
+ 
+.lots__card {
   display: flex;
-  height: 100%;
-  width: 100%;
+  flex-direction: row;
+  width: 334px;
+  min-height: 563px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
