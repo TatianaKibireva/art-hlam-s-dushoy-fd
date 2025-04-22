@@ -219,15 +219,15 @@ ul {
 }
 
 .lots__card-list-item_film {
-  background-image: url(../images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpeg);
 }
 
 .lots__card-list-item_book {
-  background-image: url(../images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpeg);
 }
 
 .lots__card-list-item_picture {
-  background-image: url(../images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpeg);
 }
 
 .lots__look-more-link {
@@ -272,8 +272,8 @@ ul {
 }
 
 .about__logo-image {
-  width: 148px;
-  height: 114px;
+  width: 180px;
+  height: 150px;
 }
 
 .about__text {
